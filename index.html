@@ -1,7 +1,182 @@
 <!DOCTYPE html>
-<html lan="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Welcome to AGROAVE Guatemala, your trusted source for premium onions grown in Almolonga, Quetzaltenango. Export-ready produce delivered fresh to the USA."
+		/>
+		<meta name="author" content="Luis Sanchez Rojas & Parker Woosley" />
+
+		<meta
+			property="og:title"
+			content="AGROAVE Guatemala | Premium Onions Exported to the USA"
+		/>
+		<meta
+			property="og:description"
+			content="AGROAVE Guatemala produces high-quality onions in Almolonga, Quetzaltenango. Sustainable farming and export-ready products delivered to international markets."
+		/>
+		<meta
+			property="og:image"
+			content="https://san20022.github.io/agroave-guatemala/images/marketonions.webp"
+		/>
+		<meta
+			property="og:url"
+			content="https://san20022.github.io/agroave-guatemala/index.html"
+		/>
+		<meta property="og:type" content="website" />
+
+		<title>AGROAVE Guatemala | Premium Onions 🧅🇬🇹</title>
+
+		<link rel="icon" href="images/onion.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles/base.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="logo-title">
+				<img
+					src="images/agroave_logo.webp"
+					alt="AGROAVE Logo"
+					loading="lazy"
+					class="logo"
+				/>
+				<h1>AGROAVE Guatemala</h1>
+			</div>
+
+			<button id="menu" aria-label="Open Menu"></button>
+
+			<nav class="navigation">
+				<a href="#home">Home</a>
+				<a href="#products">Products</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+				<a href="siteplan.html">Site Plan</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero" id="home">
+				<div class="hero-content">
+					<h2>Premium Guatemalan Onions</h2>
+					<p>
+						Grown in <strong>Almolonga, Quetzaltenango</strong>, and delivered
+						fresh to markets across Guatemala and the USA.
+					</p>
+					<a href="#contact" class="btn">Request a Quote</a>
+				</div>
+
+				<div class="hero-image">
+					<img
+						src="images/marketonions.webp"
+						alt="Fresh onions at market"
+						loading="lazy"
+					/>
+				</div>
+			</section>
+
+			<section class="weather-section">
+				<h2>Local Weather in Almolonga</h2>
+
+				<div class="weather-grid">
+					<div class="weather-card">
+						<h3 id="town">Loading...</h3>
+						<img id="graphic" src="#" alt="Weather Icon" />
+						<p id="description"></p>
+						<p id="temperature"></p>
+						<p id="humidity"></p>
+						<p id="sunrise"></p>
+						<p id="sunset"></p>
+					</div>
+
+					<div class="forecast-card">
+						<h3>Weather Forecast</h3>
+						<p id="forecast">Loading forecast...</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="products" id="products">
+				<h2>Our Onion Products</h2>
+
+				<div class="product-grid">
+					<article class="product-card">
+						<h3>White Onion</h3>
+						<p>
+							Crisp texture and strong flavor. Ideal for cooking and export
+							packaging.
+						</p>
+					</article>
+
+					<article class="product-card">
+						<h3>Yellow Onion</h3>
+						<p>
+							Classic onion variety for daily cooking, soups, and industrial use.
+						</p>
+					</article>
+
+					<article class="product-card">
+						<h3>Red Onion</h3>
+						<p>
+							Sweet flavor and vibrant color. Perfect for salads and fresh
+							markets.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<h2>About AGROAVE</h2>
+				<p>
+					AGROAVE Guatemala is an agricultural company focused on producing
+					premium onions in the fertile lands of Almolonga, Quetzaltenango.
+					We are committed to sustainable farming, quality control, and
+					export-ready packaging to meet international standards.
+				</p>
+			</section>
+
+			<section class="contact" id="contact">
+				<h2>Contact Us</h2>
+				<p>
+					Interested in wholesale orders or export partnerships? Send us a
+					message and we will contact you shortly.
+				</p>
+
+				<form action="thanks.html" method="get" class="contact-form">
+					<label>
+						Full Name:
+						<input type="text" name="name" required />
+					</label>
+
+					<label>
+						Email Address:
+						<input type="email" name="email" required />
+					</label>
+
+					<label>
+						Company Name:
+						<input type="text" name="company" />
+					</label>
+
+					<label>
+						Message:
+						<textarea name="message" rows="5" required></textarea>
+					</label>
+
+					<button type="submit" class="btn">Send Message</button>
+				</form>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>
+				&copy; <span id="current-year"></span> AGROAVE Guatemala | Almolonga,
+				Quetzaltenango
+			</p>
+			<p id="lastModified"></p>
+		</footer>
+
+		<script src="scripts/base.js" type="module"></script>
+	</body>
 </html>
