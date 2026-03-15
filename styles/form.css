@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap');
+
+@import url(variables.css);
+
+.template{
+  width: 90%;
+}
+
+form{
+  background-color: var(--secondary-color);
+  max-width: 600px;
+  border-radius: 5px;
+  padding: 10px;
+  border: solid 2px var(--primary-color);
+}
+
+label{
+  display: block;
+  text-align: left;
+  font-family: var(--paragraph-font);
+  padding: 3px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="tel"]{
+  display: block;
+  max-width: 600px;
+  width: 98%;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+textarea{
+  display: block;
+  max-width: 600px;
+  width: 98%;
+  height: 100px;
+  border: solid 2px var(--accent2-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+label span{
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-style: italic;
+}
+
+textarea:required:invalid,
+input:required:invalid{
+  border-bottom: solid 8px palevioletred;
+}
+
+textarea:required:valid,
+input:required:valid{
+  border-bottom: solid 8px green;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 var(--accent1-color); }
+  50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(249, 186, 34, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(249, 186, 34, 0); }
+}
+
+@keyframes colorPulse {
+  0% { background-color: var(--accent1-color); }
+  50% { background-color: var(--primary-color); } /* Color intermedio */
+  100% { background-color: var(--accent1-color); }
+}
+
+input[type="submit"] {
+  animation: colorPulse 2.5s infinite;
+  padding: 12px 24px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight:bold;
+}
+
+/* Inputs with smooth border color transition */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  font-family: var(--paragraph-font);
+  border: 2px solid var(--accent3-color);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* On focus or hover */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: var(--accent4-color);
+  outline: none;
+  transform: scale(1.1);
+}
+
+/* details and buy button */
+
+/* button.btn.outline {
+  font-family: var(--paragraph-font);
+  border: 2px solid var(--accent3-color);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+} */
+
+/* Placeholder styling (optional for consistency) */
+::placeholder {
+  color: #777;
+  font-style: italic;
+}
+
+/* Responsive refinement (optional, if needed) */
+@media (max-width: 500px) {
+  form {
+    padding: 1rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

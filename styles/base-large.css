@@ -1,0 +1,93 @@
+@import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap');
+
+@media (min-width: 601px){
+  .info-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    margin-bottom: -200px;
+  }
+
+  .info-text{
+    border: 2px solid var(--accent2-color);
+    grid-row: 2/3;
+    z-index: 1;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 2px;
+  }
+
+  #redOnion{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+  }
+
+  #redOnion img{
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  #yellowOnion{
+    grid-column: 2/5;
+    grid-row: 1/4;
+    width: 100%;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+  }
+
+  #yellowOnion img{
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  #whiteOnion{
+    grid-column: 1/5;
+    grid-row: 2/4;
+    width: 100%;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+  }
+
+  #whiteOnion img{
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header figure{
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .navigation a {
+    display: block;
+    margin: 10px;
+  }
+  
+  #menu {
+    display: none;
+  }
+
+}
