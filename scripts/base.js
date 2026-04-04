@@ -133,7 +133,7 @@ function submitForm(event) {
   console.log("Hello from Form");
 
   // Construct the mailto URL
-  const mailtoUrl = `mailto:aveproducto77@hotmail.com?subject=Mensaje Enviado&body=Nombre: ${encodeURIComponent(fname)} ${encodeURIComponent(lname)}%0ATeléfono: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AMensaje: ${encodeURIComponent(message)}`;
+  const mailtoUrl = `mailto:aveproducto@hotmail.com?subject=Mensaje Enviado&body=Nombre: ${encodeURIComponent(fname)} ${encodeURIComponent(lname)}%0ATeléfono: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AMensaje: ${encodeURIComponent(message)}`;
 
   // Open the mailto URL
   window.location.href = mailtoUrl;
@@ -245,7 +245,7 @@ document.getElementById('instagram').addEventListener('click', function() {
 });
 
 document.getElementById('linkedin').addEventListener('clicin/k', function() {
-  window.open('https://www.linkedin.com/');
+  window.open('https://www.linkedin.com');
 });
 
 document.getElementById('github').addEventListener('click', function() {
