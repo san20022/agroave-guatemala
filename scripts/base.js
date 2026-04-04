@@ -68,8 +68,8 @@ function homeTemplate() {
   <div class="hero-container">
     <figure class="hero"><img src="images/marketonions.webp" alt="Market Onions"  loading="lazy"> </figure>
     <div class="hero-text">
-      <h3>AGROAVE Mexican Onions</h3>
-      <p>From México 🇲🇽 to the World 🌎</p>
+      <h3>AGROAVE Guatemala Onions</h3>
+      <p>From Guatemala to the World 🌎</p>
     </div>
   </div>
   <section class="info">
@@ -231,25 +231,25 @@ const footerInfo = document.querySelector(".footer-info");
 const socialIcons = document.querySelector(".social-icons");
 
 footerInfo.innerHTML = `<address>
-					<strong>AGROAVE Mexico</strong><br />
-					Rancho Nicaragua<br />
-					Camargo, Chihuahua<br />
-					aveprodcutos77@gmail.com<br />
-					(614-175-5234)
+					<strong>AGROAVE Guatemala</strong><br />
+					Rancho Guate<br />
+					Quetzaltenango, Guatemala<br />
+					aveprodcutos@gmail.com<br />
+					(624-125-5124)
 				</address>`
 
 socialIcons.innerHTML = `<img src="images/instagram_logo.svg" alt="Instagram" id="instagram"/><img src="images/linkedin_logo.svg" alt="LinkedIn Logo" id="linkedin"/><img src="images/github_logo.svg" alt="GitHub Logo" id="github" />`
 
 document.getElementById('instagram').addEventListener('click', function() {
-  window.open('https://www.instagram.com/flixjavier/', '_blank');
+  window.open('https://www.instagram.com/', '_blank');
 });
 
-document.getElementById('linkedin').addEventListener('click', function() {
-  window.open('https://www.linkedin.com/in/felixjflores-zamarripa/');
+document.getElementById('linkedin').addEventListener('clicin/k', function() {
+  window.open('https://www.linkedin.com/');
 });
 
 document.getElementById('github').addEventListener('click', function() {
-  window.open('https://github.com/flixjavier', '_blank');
+  window.open('https://github.com', '_blank');
 });
 	
 
