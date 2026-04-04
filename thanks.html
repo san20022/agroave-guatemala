@@ -10,20 +10,17 @@
 		<meta name="author" content="Luis Sanchez" />
 		<meta
 			property="og:description"
-			content="AGROAVE Guatemala is an agricultural company focused on producing
-					premium onions in the fertile lands of Almolonga, Quetzaltenango.
-					We are committed to sustainable farming, quality control, and
-					export-ready packaging to meet international standards."
+			content="AGROAVE: Premium Guatemalan onions grown in Almolonga, Quetzaltenango and exported fresh to the USA. Learn about our sustainable farming practices, quality assurance, and how to order top-grade onions."
 		/>
 
 		<meta
 			property="og:image"
-			content="https://san20022.github.io/wdd231/project/images/marketonions.webp"
+			content="https://san20022.github.io/wdd231/images/marketonions.webp"
 		/>
 
 		<meta
 			property="og:url"
-			content="https://san20022.github.io/wdd231/project/index.html"
+			content="https://san20022.github.io/wdd231/index.html"
 		/>
 
 		<meta property="og:type" content="website" />
@@ -47,62 +44,40 @@
 
 		<meta
 			name="twitter:image"
-			content="https://san20022.github.io/wdd231/project/images/marketonions.webp"
+			content="https://san20022.github.io/wdd231/images/marketonions.webp"
 		/>
 
 		<link rel="stylesheet" type="text/css" href="styles/base.css" />
 		<link rel="stylesheet" type="text/css" href="styles/form.css" />
 		<link rel="stylesheet" type="text/css" href="styles/base-large.css" />
+
 		<title>AGROAVE | Guatemalan 🇬🇹 Onions 🧅</title>
 		<link rel="icon" href="images/onion.ico" type="image/x-icon" />
+
 		<script src="scripts/base.js" type="module" defer></script>
+		<script src="scripts/thanks.js" defer></script>
 	</head>
+
 	<body>
 		<header>
 			<figure class="logo-container">
 				<img src="images/agroave_logo.webp" alt="company logo" loading="lazy" />
 			</figure>
-			<h1>Welcome to AgroAVE</h1>
-			<button id="menu" aria-label="Open menu"></button>
+			<button id="menu"></button>
 			<nav class="navigation">
-				<a href="#home" title="Home" class="home nav-link">Home</a>
-				<a href="#products" title="products" class="onions nav-link"
-					>Products</a
-				>
-				<a href="#contactus" title="Contact" class="contact nav-link"
-					>Contact Us</a
-				>
-				<a
-					href="https://san20022.github.io/wdd231/project/siteplan.html"
-					title="Site Plan"
-					class="contact"
-					>Site Plan</a
-				>
+				<a href="index.html" title="Home" class="home">Home</a>
 			</nav>
 		</header>
 
-		<section class="api">
-			<div class="card panel">
-				<div class="weather-main">
-					<h3 id="town"></h3>
-					<img id="graphic" src="#" alt="Weather Icon" />
-					<p id="description"></p>
-				</div>
-				<div class="weather-info">
-					<p id="temperature"></p>
-					<p id="humidity"></p>
-					<p id="sunrise"></p>
-					<p id="sunset"></p>
-				</div>
+		<main class="main">
+			<div>
+				<p>Thank you! Your Message has been successfully submitted.</p>
+				<p>
+					<span class="name"></span>
+					<span class="counter"></span>
+				</p>
 			</div>
-
-			<div class="panel weather-forecast">
-				<h3>Weather Forecast</h3>
-				<p id="forecast">Light showers expected tomorrow.</p>
-			</div>
-		</section>
-
-		<main class="main"></main>
+		</main>
 
 		<footer class="footer">
 			<section class="footer-info"></section>

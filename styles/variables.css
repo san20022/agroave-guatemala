@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #470b3a;
+  --secondary-color: #e9eddb;
+  --accent1-color: #f9ba22;
+  --accent2-color: #ee6f2c;
+  --accent3-color: #9cb580;
+  --accent4-color: #01c8c8;
+
+  --heading-font: Ubuntu, sans-serif;
+  --paragraph-font: Montserrat, sans-serif;
+
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: var(--secondary-color); 
+  --paragraph-color-on-white: var(--primary-color); 
+  --paragraph-color-on-color: var(--secondary-color); 
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--secondary-color);
+  --nav-background-color: var(--accent2-color);
+  --nav-hover-link-color: var(--primary-color);
+  --nav-hover-background-color: var(--accent4-color);
+}
